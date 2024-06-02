@@ -3,7 +3,40 @@
 
 ### Notes:
 
-* add the line
+#### Visual Studio console applications:
+In order to run multiple .cs files within a solution OOP must be used
+
+Change initial Program.cs code to:
+```c#
+namespace ProjectName
+{
+class Program
+{
+static void Main(string[] args)
+{
+var .csFileName = new .CsFileName();
+// to run each file change .cs file name after new keyword - runs as an instance of the class in file
+.csFileName.Run()
+}
+}
+}
+```
+add new cs files as classes to be run through Main in Program.cs
+```c#
+namespace ProjectName
+{
+public class .csFileName
+{
+public void Run()
+{
+// code to run through Maingoes here
+}
+}
+}
+```
+
+
+#### To keep console open after running add the line:
 ```c#
 Console.ReadLine(); 
 ```
