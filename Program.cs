@@ -1,12 +1,13 @@
 ﻿namespace LearningC_
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            
+            var exercise = new Exercise2();
 
-            Console.ReadLine();
+            exercise.Run();
         }
+        
     }
 }

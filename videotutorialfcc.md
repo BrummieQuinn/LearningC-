@@ -51,7 +51,88 @@ int x = 10,
  age /= 10;
  ```
  
+* var: compiler figures out the type based on value assigned to variable
+    * use for easy implicit conversions e.g.
+	```c#
+	var age = 23;
+	var name = "Ariel";
+	```
+	* use sparingly throughout code!
 
+* const: use to disable the ability to reassign a variable
+    - can change the constant to allow the variable to be changed throughout code(reusability)
 
+#### Exercise - storing user data:
 
+* Define a variable to hold a name
+* Define a variable to hold a phone number
+* Define a variable to hold an age
+* Print variables line-by-line to the screen
+* Extra: Define variables using var keyword
 
+```c#
+string name = "Ariel";
+string phoneNumber = "(+44)0987-765-4456";
+/** in c# phone numbers should be stored as strings due to leading zeros, length and non-numerical characters
+	int is not enough to store phone numbers*/
+int age = 23; 
+
+Console.WriteLine(name);
+Console.WriteLine(phoneNumber);
+Console.WriteLine(age);
+```
+
+* Extra:
+```c#
+var name = "Ariel";
+var phoneNumber = "(+44)0987-765-4456";
+var age = 23;
+
+Console.WriteLine(name);
+Console.WriteLine(phoneNumber);
+Console.WriteLine(age);
+```
+
+#### Exercise: Odd/Even checker:
+
+* Create and initialise two ints
+* Make a variable to work out the reamainder
+* Outpur remainder to the screeb
+* Change the first int variable to another number
+    * recalculate remainder
+	* output new remainder
+
+```c#
+int number1 = 12;
+int number2 = 123;
+int remainder = number1 % number2;
+
+Console.WriteLine(remainder);
+```
+
+* input/output (i/o) for console applications:
+
+```c#
+Console.Readline();
+```
+
+store in a string variable e.g.
+```c#
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+
+Console.Write("Enter your age:");
+string ageInput = Console.ReadLine();
+
+// explicitly convert and store string ageInput to int age
+int age = Convert.ToInt32(ageInput);
+/* shorter way to convert directly from input - remove string age variable
+int age = Convert.ToInt32(Console.Readline());
+*/*
+Console.WriteLine(); // empty space for format
+Console.WriteLine("Your name is ${name}" + "your age is ${age}");
+
+Console.ReadLine();
+```
+
+* If Statements:
