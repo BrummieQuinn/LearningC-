@@ -7,8 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningC#", "LearningC#.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60897C3A-4CC1-4CB4-AE6B-5BB38BEB7FF6}"
 	ProjectSection(SolutionItems) = preProject
+		microsoftlearnc#.md = microsoftlearnc#.md
+		README.md = README.md
 		videotutorialfcc.md = videotutorialfcc.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftLearnc#", "..\MicrosoftLearnc#\MicrosoftLearnc#.csproj", "{02EA07BD-E710-4398-859B-DA441929FA28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,10 @@ Global
 		{5C53D085-E3EC-4843-A929-F25B9448CBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C53D085-E3EC-4843-A929-F25B9448CBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C53D085-E3EC-4843-A929-F25B9448CBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EA07BD-E710-4398-859B-DA441929FA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EA07BD-E710-4398-859B-DA441929FA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EA07BD-E710-4398-859B-DA441929FA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EA07BD-E710-4398-859B-DA441929FA28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

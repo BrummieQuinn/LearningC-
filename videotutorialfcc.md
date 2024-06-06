@@ -163,9 +163,80 @@ int age = Convert.ToInt32(ageInput);
 int age = Convert.ToInt32(Console.Readline());
 */*
 Console.WriteLine(); // empty space for format
-Console.WriteLine("Your name is ${name}" + "your age is ${age}");
+Console.WriteLine($"Your name is: {name}" + $"your age is: {age}");
 
 Console.ReadLine();
 ```
 
-* If Statements:
+* Else Statements:
+else statements don't need an if condition if there is  an obvious opposite condition e.g. "=="/"!="
+
+* To create random numbers using ```do-while```:
+```c#
+Random dice = new Random();
+int roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+
+
+Random random = new Random();
+int current = 0;
+
+do
+{
+    current = random.Next(1, 11); // value range of 1 - 10
+    Console.WriteLine(current);
+} while (current != 7);
+// while statement stops random number loop at when current = 7
+```
+
+* Switch statements: 
+```c#
+// basically means if variable equal to case value run associated code
+switch (variable)
+{
+	case // match goes here: // code to execute here
+		break;
+	default: // default code to execute in the event variable doesn't match case
+		break;
+
+}
+```
+
+* For Loops:
+
+ To allow a user to define number of loops and message repeated
+```c#
+Console.Write("What do you want to repeat?: ");
+string message = Console.ReadLine());
+Console.Write("How many times do you want to say hi?: "); // user sets loop counter number
+	int loopCounter = Convert.ToInt32(Console.Readline()); // read user input and convert to int
+if (loopCounter <= 0)
+{
+Console.WriteLine("Sorry, please enter a value above 0");
+}
+for (int i = 0; i < loopCounter; i++)
+{
+Console.WriteLine(message);
+}
+Console.ReadLine();
+```
+
+* While Loops:
+continue until condition true (when you don't know the number of times you will loop)
+
+checks condition first before entering while loop
+
+```c#
+// recreating a for loop
+
+int i = 0;
+while (i < 10)
+{
+Console.WriteLine(i);
+i++;
+}
+```
+
+* do-while Loops: Good when you need/doesn't matter if the code runs atleast once
+
+do will check the condition is true/false before entering the while loop and condtition checked
